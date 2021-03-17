@@ -16,5 +16,46 @@
 			<label id="number-label" for="years as customer">Years as customer <span>(optional)</span></label>
 			<input type="number" name="years" id="number" placeholder="Enter number of years as customer" min="2" max="30" />
 		</div>
+		<div>
+			<p>What kind of service did you get?</p>
+			<select id="dropdown" name="service required">
+				<option disabled selected value>Select kind of service</option>
+				<option value="backend">Back-end</option>
+				<option value="Data Analysis">Data Analysis</option>
+				<option value="Machine Learning">Machine Learning</option>
+				<option value="other">other</option>
+			</select>
+		<div>
+			<p>Would you recommend our service to a friend?</p>
+			<label>
+				<input type="radio" name="user-recommend" value="definetely" checked>Definetely
+			</label>
+			<label>
+				<input type="radio" name="user-recommend" value="maybe">Maybe
+			</label>
+			<label>
+				<input type="radio" name="user-recommend" value="not really">Not really
+			</label>
+		</div>
+		<div>
+			<p>what would you want us to improve on?</p>
+			<label>
+				<input type="checkbox" name="improvment" value="speed of project completion">Speed of project completion
+			</label>
+			<label>
+				<input type="checkbox" name="improvment" value="booking experience">Booking experience
+			</label>
+			<label>
+				<input type="checkbox" name="improvment" value="pricing">Pricing
+			</label>
+		</div>
+		<div>
+			<p>Any comments or suggestions?</p>
+			<textarea placeholder="Enter your suggestions here" id="comments" name="comment"></textarea>
+		</div>
+		<div>
+			<button type="submit" id="submit">Submit</button>
+		</div>
+		</div>
 	</form>
 </div>
